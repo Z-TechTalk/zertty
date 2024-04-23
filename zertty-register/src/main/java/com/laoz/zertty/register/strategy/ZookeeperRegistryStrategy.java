@@ -1,11 +1,21 @@
 package com.laoz.zertty.register.strategy;
 
 import com.laoz.zertty.common.domain.InstanceMetaInfo;
+import com.laoz.zertty.common.enums.RegisterCenterEnum;
+import com.laoz.zertty.register.config.RegisterCondition;
+import org.springframework.context.annotation.Conditional;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Map;
 
+@Component
+@Conditional(value = RegisterCondition.class)
 public class ZookeeperRegistryStrategy implements RegisterStrategy {
+    @Override
+    public String getStrategyCode() {
+        return RegisterCenterEnum.REGISTER_CENTER_ZOOKEEPER.getCode();
+    }
 
     @Override
     public void initialize(Map<String, String> config) {

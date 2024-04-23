@@ -7,6 +7,11 @@ import java.util.Map;
 
 public interface RegisterStrategy {
     /**
+     * 注册中心策略码
+     * @return 策略码
+     */
+    String getStrategyCode();
+    /**
      * 初始化注册中心。
      * @param config 注册中心相关的配置信息
      */
