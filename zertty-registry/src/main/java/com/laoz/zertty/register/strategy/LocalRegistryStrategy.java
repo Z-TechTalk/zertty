@@ -1,15 +1,15 @@
 package com.laoz.zertty.register.strategy;
 
 import com.laoz.zertty.common.domain.InstanceMetaInfo;
+import com.laoz.zertty.register.config.RegistryConfig;
 
 import java.util.List;
-import java.util.Map;
 
 
 public class LocalRegistryStrategy implements RegistryStrategy {
 
     @Override
-    public void initialize(Map<String, String> config) {
+    public void initialize(RegistryConfig registryConfig) {
 
     }
 
