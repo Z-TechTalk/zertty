@@ -2,10 +2,11 @@ package com.laoz.zertty.register.strategy;
 
 import com.laoz.zertty.common.domain.InstanceMetaInfo;
 import com.laoz.zertty.register.config.RegistryConfig;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-
+@Component
 public class ZookeeperRegistryStrategy implements RegistryStrategy {
 
     @Override
