@@ -5,12 +5,7 @@ import com.laoz.zertty.common.domain.InstanceMetaInfo;
 import java.util.List;
 import java.util.Map;
 
-public interface RegisterStrategy {
-    /**
-     * 注册中心策略码
-     * @return 策略码
-     */
-    String getStrategyCode();
+public interface RegistryStrategy {
     /**
      * 初始化注册中心。
      * @param config 注册中心相关的配置信息

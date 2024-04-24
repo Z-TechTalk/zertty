@@ -16,7 +16,7 @@
     <name>zertty</name>
 
     <modules>
-        <module>zertty-register</module>
+        <module>zertty-registry</module>
         <module>zertty-common</module>
     </modules>
 

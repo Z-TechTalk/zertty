@@ -3,9 +3,11 @@ package com.laoz.zertty.common.enums;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.util.Objects;
+
 @Getter
 @AllArgsConstructor
-public enum RegisterCenterEnum {
+public enum RegistryCenterEnum {
 
     /**
      * 本地注册中心
@@ -23,5 +25,18 @@ public enum RegisterCenterEnum {
     private final String code;
 
     private final String desc;
+
+    public static RegistryCenterEnum getRegisterCenterEnum(String code){
+        if (Objects.isNull(code)){
+            return null;
+        }
+        for (RegistryCenterEnum value : RegistryCenterEnum.values()) {
+            if (code.equals(value.getCode())){
+                return value;
+            }
+        }
+        return null;
+    }
+
 
 }

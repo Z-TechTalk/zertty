@@ -50,9 +50,39 @@ public class InstanceMetaInfo {
         private String version = ZerttyConstant.ServiceMetaInfoConstant.DEFAULT_VERSION;
         private String group = ZerttyConstant.ServiceMetaInfoConstant.DEFAULT_GROUP;
 
-        public InstanceMetaInfo build() throws URISyntaxException {
+        public ServiceMetaINFBuilder host(String host) {
+            this.host = host;
+            return this;
+        }
+
+        public ServiceMetaINFBuilder port(int port) {
+            this.port = port;
+            return this;
+        }
+
+        public ServiceMetaINFBuilder useHttps(boolean useHttps) {
+            this.useHttps = useHttps;
+            return this;
+        }
+
+        public ServiceMetaINFBuilder version(String version) {
+            this.version = version;
+            return this;
+        }
+
+        public ServiceMetaINFBuilder group(String group) {
+            this.group = group;
+            return this;
+        }
+
+        public InstanceMetaInfo build() {
             String protocol = useHttps ? "https" : "http";
-            URI address = new URI(protocol, null, host, port, null, null, null);
+            URI address;
+            try {
+                address = new URI(protocol, null, host, port, null, null, null);
+            } catch (URISyntaxException e) {
+                throw new IllegalArgumentException("Invalid host or port", e);
+            }
             return new InstanceMetaInfo(name, address, version, group);
         }
     }

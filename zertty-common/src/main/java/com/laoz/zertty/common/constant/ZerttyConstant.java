@@ -18,4 +18,15 @@ public class ZerttyConstant {
          */
         public static final String DEFAULT_CONFIG_PREFIX = "zertty";
     }
+
+    /**
+     * zertty的注册中心
+     */
+    public static class RegisterCenter{
+        /**
+         * 读取注册中心类型配置
+         */
+        public static final String TYPE = "zertty.register.center.type";
+    }
+
 }

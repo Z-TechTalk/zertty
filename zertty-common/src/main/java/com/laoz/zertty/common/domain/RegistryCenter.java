@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.concurrent.TimeUnit;
 
 @Data
-public class RegisterCenter {
+public class RegistryCenter {
     /**
      * 注册中心类别
      */
