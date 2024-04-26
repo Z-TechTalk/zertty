@@ -22,27 +22,27 @@ public class ZerttyConstant {
     /**
      * zertty的注册中心
      */
-    public static class RegisterCenter{
+    public static class RegistryCenter{
         /**
          * 注册中心类型
          */
-        public static final String TYPE = "zertty.register.center.type";
+        public static final String TYPE = "zertty.register-center.type";
         /**
          * 注册中心地址
          */
-        public static final String ADDRESS = "zertty.register.center.address";
+        public static final String ADDRESS = "zertty.register-center.address";
         /**
          * 注册中心用户名
          */
-        public static final String USERNAME = "zertty.register.center.username";
+        public static final String USERNAME = "zertty.register-center.username";
         /**
          * 注册中心密码
          */
-        public static final String PASSWORD = "zertty.register.center.password";
+        public static final String PASSWORD = "zertty.register-center.password";
         /**
          * 注册中心超时时长（单位毫秒）
          */
-        public static final String TIMEOUT = "zertty.register.center.timeout";
+        public static final String TIMEOUT = "zertty.register-center.timeout";
     }
 
 }
