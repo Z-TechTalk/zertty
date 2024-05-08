@@ -28,7 +28,7 @@ public class RegistryConfig {
     }
 
     @Data
-    public static class RegistryConfigBuilder {
+    public static class builder {
         private String type;
         private String address;
         private String username;
@@ -36,33 +36,28 @@ public class RegistryConfig {
         private long timeout = 3000;
         private TimeUnit timeUnit = TimeUnit.MILLISECONDS;
 
-        public RegistryConfigBuilder type(String type) {
+        public builder type(String type) {
             this.type = type;
             return this;
         }
 
-        public RegistryConfigBuilder address(String address) {
+        public builder address(String address) {
             this.address = address;
             return this;
         }
 
-        public RegistryConfigBuilder username(String username) {
+        public builder username(String username) {
             this.username = username;
             return this;
         }
 
-        public RegistryConfigBuilder password(String password) {
+        public builder password(String password) {
             this.password = password;
             return this;
         }
 
-        public RegistryConfigBuilder timeout(long timeout) {
+        public builder timeout(long timeout) {
             this.timeout = timeout;
-            return this;
-        }
-
-        public RegistryConfigBuilder timeUnit(TimeUnit timeUnit) {
-            this.timeUnit = timeUnit;
             return this;
         }
 
