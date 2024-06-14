@@ -8,11 +8,13 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>zertty-register</artifactId>
+
+    <artifactId>zertty-provider</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>zertty-register</name>
+    <name>zertty-provider</name>
 
     <description>Demo project for Spring Boot</description>
+
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -23,7 +25,6 @@
             <artifactId>zertty-common</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
-
     </dependencies>
 
 </project>
