@@ -16,8 +16,12 @@
     <name>zertty</name>
 
     <modules>
+        <module>zertty-client</module>
+        <module>zertty-server</module>
         <module>zertty-registry</module>
         <module>zertty-common</module>
+        <module>zertty-provider</module>
+        <module>zertty-consumer</module>
     </modules>
 
     <description>Demo project for Spring Boot</description>
